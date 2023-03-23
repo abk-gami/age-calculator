@@ -18,11 +18,9 @@ html, body{
     max-height: 550px;
     max-width: 400px;
     user-select: none;
-    /* width: 80%; */
     background: #252525;
     border-radius: 50px;
     border: 4px solid #fff;
-    /* padding-top: 30px; */
     padding: 30px 25px 90px;
     text-align: center;
     color: azure;
