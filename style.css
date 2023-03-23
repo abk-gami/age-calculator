@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif ;
+}
+
+html, body{
+    font-family: 'Poppins', 'Whyte';
+    background: linear-gradient( to top, #00ff85, #fff432);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-height: 550px;
+    max-width: 400px;
+    user-select: none;
+    /* width: 80%; */
+    background: #252525;
+    border-radius: 50px;
+    border: 4px solid #fff;
+    /* padding-top: 30px; */
+    padding: 30px 25px 90px;
+    text-align: center;
+    color: azure;
+    box-shadow: 0 15px 35px rgb(17, 17, 17);
+    overflow: hidden;
+    margin: auto;
+    /* transition: height 5s ease; */
+}
+h1{
+    margin-top: 50px;
+}
+h2{
+    margin-top: 25px;
+}
+ul{
+    list-style: none;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-align: center;
+}
+ul li{
+    margin-top: 30px;
+    display: inline-block;
+}
+.month{
+    margin-right: 29px;
+    margin-left: 10px;
+}
+.year{
+    margin-left: -112px;
+    margin-right: 20px;
+}
+.date{
+    margin-right: -50px;
+    margin-left: 17px;
+}
+input{
+    width: 70px;
+    background: #252525;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    margin-top: 40px;
+    color: white;
+    padding-left: 10px;
+    transition: all 0.4s ease;
+}
+input:focus{
+    border: 5px solid  #fff432;
+} 
+#month{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+button{
+    margin-top: 20px;
+    padding: 8px;
+    background: #00ff85;
+    border: 3px solid #fff;
+    color: black;
+    border-radius: 6px;
+    transition: all 0.7s ease;
+}
+button:hover{
+    background: #fff432;
+}
+h3{
+    margin-top: 40px;
+    font-size: 1.6em;
+}
+.last{
+    margin-top: 10px;
+}
+
+footer{
+    position: absolute;
+    top: 94%;
+    background: #0e0707;
+    display: inline-block;
+    color: rgb(0, 255, 0);
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+/* chrome, safari, edge, opera  ::: to hide up and down arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+ /* for firefox */
+ input[type=number]{
+    -moz-appearance: textfield;
+ }
+
+
+ @media screen and ( max-width: 550px) {
+    .container{
+        width: 100%;
+    }
+    input{
+        padding: 5px;
+    }
+}
+ @media screen and ( max-width: 383px) {
+    input{
+        width: 50px;
+    }
+    .last{
+        margin-top: 10px;
+    }
+}
+ @media screen and ( max-width: 325px) {
+    .container{
+        padding-top: 10px;
+    }
+    input{
+        width: 50px;
+    }
+    .last{
+        margin-top: 10px;
+    }
+}
+@media screen and ( max-width: 325px){
+    h1{
+        font-size: 1.8em;
+    }
+}
+@media screen and ( max-width: 308px) {
+    .container{
+        overflow-y: none;
+    }
+    #date{
+        /* margin: 0; */
+        margin-top: 10px;
+        margin-left: 35%;
+        padding-left: 10px;
+    }
+    #month{
+        /* margin: 0; */
+        margin-top: 30px;
+        margin-left: 35%;
+        padding-left: 10px;
+    }
+    #year{
+        /* margin: 0; */
+        margin-top: 30px;
+        margin-left: 35%;
+        padding-left: 10px;
+    }
+
+    input{
+        display: block;
+        width: 5.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.4em;
+    }
+}
+ 
